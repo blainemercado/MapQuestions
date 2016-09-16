@@ -14,6 +14,8 @@
 		AFD2FF7A1D8C5A5B00116D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD2FF781D8C5A5B00116D11 /* LaunchScreen.storyboard */; };
 		AFD2FF851D8C5A5B00116D11 /* MapQuestionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2FF841D8C5A5B00116D11 /* MapQuestionsTests.swift */; };
 		AFD2FF901D8C5A5C00116D11 /* MapQuestionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2FF8F1D8C5A5C00116D11 /* MapQuestionsUITests.swift */; };
+		AFD2FF9E1D8CAC6D00116D11 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2FF9D1D8CAC6D00116D11 /* GameOverViewController.swift */; };
+		AFD2FFA01D8CAD5B00116D11 /* GameOverViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2FF9F1D8CAD5B00116D11 /* GameOverViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		AFD2FF8B1D8C5A5C00116D11 /* MapQuestionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapQuestionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD2FF8F1D8C5A5C00116D11 /* MapQuestionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapQuestionsUITests.swift; sourceTree = "<group>"; };
 		AFD2FF911D8C5A5C00116D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD2FF9D1D8CAC6D00116D11 /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOverViewController.swift; path = ../GameOverViewController.swift; sourceTree = "<group>"; };
+		AFD2FF9F1D8CAD5B00116D11 /* GameOverViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOverViewControllerDelegate.swift; path = ../GameOverViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		AFD2FF6E1D8C5A5B00116D11 /* MapQuestions */ = {
 			isa = PBXGroup;
 			children = (
+				AFD2FF9F1D8CAD5B00116D11 /* GameOverViewControllerDelegate.swift */,
+				AFD2FF9D1D8CAC6D00116D11 /* GameOverViewController.swift */,
 				AFD2FF6F1D8C5A5B00116D11 /* AppDelegate.swift */,
 				AFD2FF711D8C5A5B00116D11 /* ViewController.swift */,
 				AFD2FF731D8C5A5B00116D11 /* Main.storyboard */,
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD2FF721D8C5A5B00116D11 /* ViewController.swift in Sources */,
+				AFD2FF9E1D8CAC6D00116D11 /* GameOverViewController.swift in Sources */,
 				AFD2FF701D8C5A5B00116D11 /* AppDelegate.swift in Sources */,
+				AFD2FFA01D8CAD5B00116D11 /* GameOverViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
