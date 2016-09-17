@@ -18,27 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Hcv-50-YWY">
-                                <rect key="frame" x="20" y="180" width="560" height="412"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Hcv-50-YWY">
+                                <rect key="frame" x="20" y="179" width="560" height="413"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="D45-XD-Mqz" appends="YES" id="big-tg-h1S"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10V-w7-h6w">
-                                <rect key="frame" x="20" y="109" width="112" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10V-w7-h6w">
+                                <rect key="frame" x="20" y="100" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubv-3v-rOB">
-                                <rect key="frame" x="489" y="109" width="91" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubv-3v-rOB">
+                                <rect key="frame" x="489" y="100" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Map Quest...ions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdM-pI-mDv">
-                                <rect key="frame" x="199" y="28" width="203" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map Quest...ions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdM-pI-mDv">
+                                <rect key="frame" x="211" y="28" width="178" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="27"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,8 +50,8 @@
                                     <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrb-wO-cOJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-3D-kNF">
-                                <rect key="frame" x="20" y="138" width="82" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-3D-kNF">
+                                <rect key="frame" x="20" y="155" width="560" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,13 +62,18 @@
                             <constraint firstItem="A4K-GH-IJe" firstAttribute="top" secondItem="UdM-pI-mDv" secondAttribute="bottom" constant="56" id="3Yl-Dw-VIa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hcv-50-YWY" secondAttribute="bottom" constant="8" symbolic="YES" id="4bW-RB-qPB"/>
                             <constraint firstAttribute="leadingMargin" secondItem="10V-w7-h6w" secondAttribute="leading" id="8MF-uw-N7G"/>
+                            <constraint firstItem="ubv-3v-rOB" firstAttribute="leading" secondItem="10V-w7-h6w" secondAttribute="trailing" constant="357" id="9zb-Yi-VaE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="A4K-GH-IJe" secondAttribute="trailing" id="G2P-JI-UGw"/>
                             <constraint firstItem="A4K-GH-IJe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="G6e-so-Vrn"/>
+                            <constraint firstItem="ubv-3v-rOB" firstAttribute="leading" secondItem="10V-w7-h6w" secondAttribute="trailing" constant="357" id="SWd-JB-PQ1"/>
                             <constraint firstItem="Hcv-50-YWY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WOS-Ce-NQH"/>
                             <constraint firstItem="Hcv-50-YWY" firstAttribute="top" secondItem="UdM-pI-mDv" secondAttribute="bottom" constant="119" id="ZWj-Ov-oVb"/>
-                            <constraint firstItem="ubv-3v-rOB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="bHt-aD-y6X"/>
+                            <constraint firstItem="ubv-3v-rOB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="bHt-aD-y6X"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ubv-3v-rOB" secondAttribute="trailing" id="cqE-Xc-0ty"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lmb-3D-kNF" secondAttribute="trailing" id="ftG-io-ow8"/>
                             <constraint firstItem="UdM-pI-mDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kR3-JM-1Ox"/>
+                            <constraint firstItem="Hcv-50-YWY" firstAttribute="top" secondItem="Lmb-3D-kNF" secondAttribute="bottom" constant="8" id="ldZ-Bu-e83"/>
+                            <constraint firstItem="10V-w7-h6w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="mfE-AV-0xd"/>
                             <constraint firstItem="ubv-3v-rOB" firstAttribute="top" secondItem="10V-w7-h6w" secondAttribute="bottom" constant="-21" id="nlM-Vr-lRA"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Lmb-3D-kNF" secondAttribute="leading" id="nsk-Bn-YQg"/>
                             <constraint firstItem="UdM-pI-mDv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="oNl-s8-ThH"/>
@@ -77,6 +82,10 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="sPE-YA-BKK"/>
+                                <exclude reference="9zb-Yi-VaE"/>
+                                <exclude reference="SWd-JB-PQ1"/>
+                                <exclude reference="nlM-Vr-lRA"/>
                                 <exclude reference="3Yl-Dw-VIa"/>
                             </mask>
                         </variation>
